@@ -17,6 +17,7 @@ body {
     position: relative;
 }
 
+/* Fondo de superposición */
 body::before {
     content: "";
     position: fixed;
@@ -24,74 +25,72 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(25, 30, 30, 0.8);
+    background-color: rgba(25, 30, 30, 0.7); /* Ajuste de opacidad */
     z-index: -1;
 }
 
-
-.navbar {
+/* Barra de navegación */
+.barradenavegacion {
     background-color: #1E3A3A;
     width: 100%;
     padding: 10px 0;
     display: flex;
     justify-content: center;
     position: relative;
+    z-index: 10;
 }
 
-.navbar ul {
+.barradenavegacion ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.navbar li {
+.barradenavegacion li {
     font-weight: bold;
     color: white;
     text-transform: uppercase;
     font-size: 16px;
 }
 
-.navbar li a {
+.barradenavegacion li a {
     text-decoration: none;
     color: white;
     padding: 10px 15px;
 }
 
-.navbar li a:hover {
+.barradenavegacion li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
 }
 
-
-.hero-section {
+/* Sección principal */
+.section-principal {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80vh;
     text-align: center;
-    color: #2f3e30;
+    color: #ffffff;
     position: relative;
     width: 100%;
+    padding: 0 20px;
 }
 
-.hero-content {
+.contenido {
     position: relative;
-    color: #ffffff;
     z-index: 1;
-
+    max-width: 800px; /* Ancho máximo para que el texto no sea demasiado ancho */
 }
 
-.hero-content h1 {
+.contenido h1 {
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.2;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
-
-
-.hero-content p {
+.contenido p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
@@ -117,7 +116,8 @@ body::before {
     background-color: #2D4A4A;
 }
 
-/* Formulario de registro */
+
+/* formulario */
 .form-container {
     width: 300px;
     padding: 20px;
@@ -169,3 +169,119 @@ body::before {
 
     background-color: aqua;
 }
+
+
+/*contactanos */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #889d80;
+    padding: 150px 50px;
+    margin-top: 40px;
+    border-top-left-radius: 270px;
+    border-top-right-radius: 270px;
+    
+
+}
+
+.contact-container h1 {
+    font-size: 30px;
+    color: #4b4029;
+    margin: 0 0 20px;
+    font-family: 'Georgia', serif;
+}
+
+
+.contact-info {
+    font-size: 18px;
+    color: #4b4029;
+    line-height: 1.6;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 120px;
+    padding: 10px 0px;
+    background-color: #e0e5dc;
+    width: 100%;
+    justify-content: center;
+    position: center;
+    left: 0;
+    bottom: 0;
+   
+}
+
+.social-media a {
+    color: #4b4029;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Sostenibilidad  */
+
+
+/* Contenedor de sostenibilidad */
+.sustainability-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.sustainability-container h1 {
+    font-size: 48px;
+    color: #efe4e2;
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenido en columnas */
+.content {
+    column-count: 2;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ebe6e6;
+    margin-bottom: 15px;
+}
+
+/* Estilo para imágenes y texto adicional */
+.images-and-text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text {
+    background-color: rgba(242, 232, 232, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2a2929;
+ 
+}
+
